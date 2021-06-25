@@ -163,11 +163,11 @@
     const waline = new Waline(Object.assign({
       el: '#waline-wrap',
       serverURL: 'https://hexo-waline-alpha.vercel.app/',
-      avatar: 'mp',
+      avatar: 'monsterid',
       path: location.pathname,
       visitor: false,
       dark: '[data-theme="dark"]'
-    }, {"avatarCDN":"https://sdn.geekzu.org/avatar/","langMode":{"admin":"爛砲兵","nick":"宅宅名","mail":"宅之電子郵件","link":"有什麼網址讓我康康","sofa":"宅之懶，我有所體會，所以三格資訊框都選填模式"}}))
+    }, {"avatarCDN":"https://sdn.geekzu.org/avatar/","lang":"zh-TW","langMode":{"admin":"爛砲兵","nick":"宅宅名(選填)","mail":"宅之電子郵件(選填)","link":"有什麼網址讓我康康(選填)","placeholder":"聽說電子郵件可以識別身分用","sofa":"什麼叫做空，這就是空的一種表方"}}))
   }
 
   if (typeof Waline === 'function') initWaline() 
