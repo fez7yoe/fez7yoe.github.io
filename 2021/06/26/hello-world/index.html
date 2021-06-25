@@ -163,11 +163,11 @@
     const waline = new Waline(Object.assign({
       el: '#waline-wrap',
       serverURL: 'https://hexo-waline-alpha.vercel.app/',
-      avatar: 'monsterid',
+      avatar: 'mp',
       path: location.pathname,
       visitor: false,
       dark: '[data-theme="dark"]'
-    }, null))
+    }, {"avatarCDN":"https://sdn.geekzu.org/avatar/","langMode":{"admin":"爛砲兵","nick":"宅宅名","mail":"宅之電子郵件","link":"有什麼網址讓我康康","sofa":"宅之懶，我有所體會，所以三格資訊框都選填模式"}}))
   }
 
   if (typeof Waline === 'function') initWaline() 
