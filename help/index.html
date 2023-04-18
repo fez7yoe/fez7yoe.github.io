@@ -35,7 +35,7 @@
 
 
 
-<script>var GLOBALCONFIG = {"root":"/","runtime":"2022-06-04 15:00:00","lazyload":{"enable":false,"error":"/img/acrylic.png"},"hightlight":{"enable":false,"limit":200},"lightbox":true,"randomlinks":false,"lang":{"theme":{"dark":"已切換成 深色 模式","light":"已切換成 淺色 模式"},"copy":{"success":"複製成功 ヽ(●´∀`●)ﾉ","error":"複製失敗 ( ºΔº )"},"backtop":"回到頂部","time":{"recent":"最近","yesterday":"昨天","berforeyesterday":"前天","daybefore":"天前","runtime":"天"},"sayhello":{"morning":"早安","noon":"午安","afternoon":"是時候來點下午茶","night":"晚安","goodnight":"是時候來點宵夜","iam":""},"search":{"empty":"搜尋結果為空","hit":"已找到 ${query} 項結果","placeholder":"輸入關鍵字以查詢"}},"covercolor":false};</script><script id="site-config">var PAGECONFIG = {"is_home":false,"is_post":false,"is_page":true,"page":"help","toc":false,"comment":true};</script>
+<script>var GLOBALCONFIG = {"root":"/","runtime":"2022-06-04 15:00:00","lazyload":{"enable":false,"error":"/img/acrylic.png"},"hightlight":{"enable":false,"limit":200},"lightbox":true,"randomlinks":false,"lang":{"theme":{"dark":"已切換成 深色 模式","light":"已切換成 淺色 模式"},"copy":{"success":"複製成功 ヽ(●´∀`●)ﾉ","error":"複製失敗 ( ºΔº )"},"backtop":"電梯向上","time":{"recent":"最近","yesterday":"昨天","berforeyesterday":"前天","daybefore":"天前","runtime":"天"},"sayhello":{"morning":"早安","noon":"午安","afternoon":"是時候來點下午茶","night":"晚安","goodnight":"是時候來點宵夜","iam":""},"search":{"empty":"搜尋結果為空","hit":"已找到 ${query} 項結果","placeholder":"輸入關鍵字以查詢"}},"covercolor":false};</script><script id="site-config">var PAGECONFIG = {"is_home":false,"is_post":false,"is_page":true,"page":"help","toc":false,"comment":true};</script>
     <meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="小被被好好摸" type="application/atom+xml">
 </head>
     <body id="body">
@@ -309,6 +309,17 @@
 
 
 
+<div class="nav-button" id="randomPost_button" onclick="goBottom()">
+    <a class="site-page" title="電梯向下">
+        <i class="fas fa-arrow-down" style="font-size: 1rem;"></i>
+    </a>
+    <script>
+        function goBottom() {
+            let t = document.documentElement.scrollHeight;
+            window.scroll({ top: t, left: 0, behavior: 'smooth' });
+        }
+    </script>
+</div>
 <div class="nav-button" id="nav-totop" onclick="acrylic.toTop()">
     <a class="totopbtn">
         <i class="fas fa-arrow-up"></i>
@@ -376,7 +387,7 @@
                     <div id="footer_deal">
     
     <img class="footer_mini_logo" src="https://cdn.jsdelivr.net/gh/fez7yoe/My-Hexo-File/avatar/fez7yoe.png"
-        title="回到頂部" onclick="acrylic.toTop()">
+        title="電梯向上" onclick="acrylic.toTop()">
     
 </div>    
 <div id="heo-footer">
