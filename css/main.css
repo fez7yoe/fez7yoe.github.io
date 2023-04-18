@@ -11242,7 +11242,7 @@ figure.gallery-group:hover .gallery-group-name::after {
 }
 
 .flink#article-container .site-card:hover .info {
-  background: var(--heo-theme);
+  background: var(--heo-card-bg);
 }
 
 /* 背景 */
