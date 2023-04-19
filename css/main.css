@@ -11208,7 +11208,7 @@ figure.gallery-group:hover .gallery-group-name::after {
 
 .flink#article-container .site-card:hover .info .title {
   color: var(--heo-white);
-  box-shadow: var(--heo-shadow-blue);
+  /*box-shadow: var(--heo-shadow-blue);*/
 }
 
 .flink#article-container .site-card:hover .info {
