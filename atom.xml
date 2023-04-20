@@ -6,7 +6,7 @@
   <link href="https://fez7yoe.github.io/atom.xml" rel="self"/>
   
   <link href="https://fez7yoe.github.io/"/>
-  <updated>2023-04-16T17:28:04.925Z</updated>
+  <updated>2023-04-20T14:30:28.434Z</updated>
   <id>https://fez7yoe.github.io/</id>
   
   <author>
@@ -21,10 +21,10 @@
     <link href="https://fez7yoe.github.io/posts/d6f6dda4/"/>
     <id>https://fez7yoe.github.io/posts/d6f6dda4/</id>
     <published>2023-04-12T18:22:52.000Z</published>
-    <updated>2023-04-16T17:28:04.925Z</updated>
+    <updated>2023-04-20T14:30:28.434Z</updated>
     
     
-    <summary type="html">供開發人員參考實際情況使用 Acrylic-Next 主題時把覺得怪怪的地方，集中在這裡以便測試1. 無法切換的 tab 標籤實際彩現出來的樣子在 文章(Post) 裡是沒問題的對吧，請移駕到 頁面(</summary>
+    <summary type="html">供開發人員參考實際情況使用 Acrylic-Next 主題時把覺得怪怪的地方，集中在這裡以便測試1. 無法切換的 tab 標籤 (已修正)修正報告 及 程式碼改動在 文章(Post) 裡是正常的，可以</summary>
     
     
     

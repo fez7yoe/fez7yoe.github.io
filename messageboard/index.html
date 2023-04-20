@@ -340,29 +340,23 @@
     <div id="page">
         
                 <div id="article-container">
-    <h2 id="部落格的評論設定集"><a href="#部落格的評論設定集" class="headerlink" title="部落格的評論設定集"></a>部落格的評論設定集</h2><table>
-<thead>
-<tr>
-<th align="center">注意事項</th>
-<th align="center">評論系統</th>
-<th align="center">雲端運算</th>
-<th align="center">頭像平台</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">我偶爾會在留言板自言自語</td>
-<td align="center">Twikoo</td>
-<td align="center">Zeabur</td>
-<td align="center">Gravatar<br>Cravatar</td>
-</tr>
-<tr>
-<td align="center">一個方便與訪客溝通的管道</td>
-<td align="center"><a target="_blank" rel="noopener" href="https://twikoo.js.org/">使用說明</a><br><a target="_blank" rel="noopener" href="https://github.com/imaegoo/twikoo">Github 專案</a></td>
-<td align="center"><a target="_blank" rel="noopener" href="https://docs.zeabur.com/zh-TW">使用說明</a><br><a target="_blank" rel="noopener" href="https://zeabur.com/zh-TW">官方網站</a><br><a target="_blank" rel="noopener" href="https://yuanlin.dev/posts/i-moved-my-blog-from-vercel-to-zeabur">開發者文章</a></td>
-<td align="center">依情況切換這 4 種 CDN：<br>cn.gravatar.com、cravatar.cn<br>sdn.geekzu.org、gravatar.loli.net<br>目前使用的 CDN：cravatar.cn<br>預設圖示：identicon<br><a target="_blank" rel="noopener" href="https://en.gravatar.com/">Gravatar</a> 官方網站<br><a target="_blank" rel="noopener" href="https://cravatar.cn/">Cravatar</a> 官方網站</td>
-</tr>
-</tbody></table>
-
+    <h2 id="部落格的評論設定集"><a href="#部落格的評論設定集" class="headerlink" title="部落格的評論設定集"></a>部落格的評論設定集</h2><div class="tabs" id="messageboard"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#messageboard-1">注意事項</button></li><li class="tab"><button type="button" data-href="#messageboard-2">評論系統</button></li><li class="tab"><button type="button" data-href="#messageboard-3">雲端運算</button></li><li class="tab"><button type="button" data-href="#messageboard-4">頭像平台</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="messageboard-1"><p><strong>我偶爾會在留言板自言自語</strong></p>
+<hr>
+<p>這是一個方便與訪客溝通的管道</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="messageboard-2"><p><strong>Twikoo</strong></p>
+<hr>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://twikoo.js.org/">使用說明</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/imaegoo/twikoo">Github 專案</a></li>
+</ul><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="messageboard-3"><p><strong>Zeabur</strong></p>
+<hr>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://docs.zeabur.com/zh-TW">使用說明</a></li>
+<li><a target="_blank" rel="noopener" href="https://zeabur.com/zh-TW">官方網站</a></li>
+<li><a target="_blank" rel="noopener" href="https://yuanlin.dev/posts/i-moved-my-blog-from-vercel-to-zeabur">開發者文章</a></li>
+</ul><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="messageboard-4"><p><strong>Gravatar、Cravatar</strong></p>
+<hr>
+<p>依情況切換這 4 種 CDN：<sup><strong>1.</strong></sup>cn.gravatar.com、<sup><strong>2.</strong></sup>cravatar.cn、<sup><strong>3.</strong></sup>sdn.geekzu.org、<sup><strong>4.</strong></sup>gravatar.loli.net<br>目前使用的 CDN：<strong>cravatar.cn</strong><br>預設圖示：<strong>identicon</strong><br><a target="_blank" rel="noopener" href="https://en.gravatar.com/">Gravatar</a> 官方網站：服務範圍為 全球，我猜是全地球，因為官方網站有 52 種語言可切換<br><a target="_blank" rel="noopener" href="https://cravatar.cn/">Cravatar</a> 官方網站：服務範圍為 <a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-tw/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD">中華人民共和國</a>，據我所知他們使用 Gravatar 的速度會爆慢，所以 Cravatar 是他們的替代品</p>
+<p>關於 CDN 的說明：<br>選 Gravatar CDN 的話，我的頭像可以讀取並顯示，但在 <a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-tw/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD">中華人民共和國</a> 國家裡的人就無法顯示頭像，強迫症看了很頭痛<br>選 Cravatar CDN 的話，仍然可以讀取我在 Gravatar 上設定好的頭像，而在 <a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-tw/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD">中華人民共和國</a> 國家裡的人也能正常顯示他們的頭像<br>所以在 <strong>我全都要</strong> 的執念下，我選擇了 Cravatar 的 CDN<br>不然缺圖看了真的會氣死</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
 </div>
              
         
