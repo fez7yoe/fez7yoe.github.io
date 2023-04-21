@@ -1,5 +1,14 @@
+function whenDOMReady() {
+    //此处填写需要执行的代码，如:
+    //leonus.demo()
+    owoBig()
+  }
+  
+  whenDOMReady() //打开网站之后先执行一次函数
+  document.addEventListener("pjax:complete", whenDOMReady) //pjax加载完成之后执行上面函数
+
 // 如果当前页有评论就执行函数
-if (document.getElementById('post-comment')) owoBig();
+if (document.getElementById('post-comment','page-comment','OwO-items-image')) owoBig();
 // 表情放大
 function owoBig() {
     let flag = 1, // 设置节流阀
