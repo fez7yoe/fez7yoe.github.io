@@ -299,7 +299,7 @@ class acrylic {
                 direction: 'vertical',
                 loop: true,
                 autoplay: {
-                    delay: 3000,
+                    delay: 7000,
                     pauseOnMouseEnter: true
                 },
             });
