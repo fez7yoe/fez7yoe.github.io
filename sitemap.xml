@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://fez7yoe.github.io/says/index.html</loc>
+    
+    <lastmod>2023-04-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://fez7yoe.github.io/messageboard/index.html</loc>
+    
+    <lastmod>2023-04-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://fez7yoe.github.io/posts/954ade5a/</loc>
     
     <lastmod>2023-04-26</lastmod>
@@ -11,27 +29,9 @@
   </url>
   
   <url>
-    <loc>https://fez7yoe.github.io/says/index.html</loc>
-    
-    <lastmod>2023-04-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://fez7yoe.github.io/links/index.html</loc>
     
     <lastmod>2023-04-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://fez7yoe.github.io/messageboard/index.html</loc>
-    
-    <lastmod>2023-04-21</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -85,7 +85,7 @@
 
   <url>
     <loc>https://fez7yoe.github.io/</loc>
-    <lastmod>2023-04-26</lastmod>
+    <lastmod>2023-04-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -93,14 +93,14 @@
   
   <url>
     <loc>https://fez7yoe.github.io/tags/delivery/</loc>
-    <lastmod>2023-04-26</lastmod>
+    <lastmod>2023-04-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fez7yoe.github.io/tags/bug/</loc>
-    <lastmod>2023-04-26</lastmod>
+    <lastmod>2023-04-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -109,14 +109,14 @@
   
   <url>
     <loc>https://fez7yoe.github.io/categories/experience/</loc>
-    <lastmod>2023-04-26</lastmod>
+    <lastmod>2023-04-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fez7yoe.github.io/categories/help/</loc>
-    <lastmod>2023-04-26</lastmod>
+    <lastmod>2023-04-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
