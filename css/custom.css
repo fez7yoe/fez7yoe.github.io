@@ -527,7 +527,7 @@ body[data-type="album_detail"] #page .author-content-item .card-content .banner-
   color: var(--heo-white);
   border-radius: 20px !important;
 }
-
+/* ------------------------------------------------------------------------- */
 /* 响应式 */
 @media screen and (max-width: 1300px) {
   #album_detail .timeline ul li.album-item {
@@ -541,7 +541,7 @@ body[data-type="album_detail"] #page .author-content-item .card-content .banner-
     margin-right: 0px;
   }
 }
-
+/* ------------------------------------------------------------------------- */
 @font-face {
   font-family: 'GenSenRounded';
   src: url(https://cdn.jsdelivr.net/gh/fez7yoe/My-Fonts-File/WebFont/GenSenRounded/GenSenRounded-B.ttc);
@@ -561,3 +561,17 @@ font-family: 'GenSenRounded' !important;
 a.categoryButton {
 font-family: 'GenSenRounded' !important;
 }
+/* ------------------------------------------------------------------------- */
+#sakana-widget-takina {
+  position: fixed;
+  right: 50%;
+  bottom: -30px;
+  z-index: 9999;
+}
+#sakana-widget-chisato {
+  position: fixed;
+  left: 50%;
+  bottom: 5px;
+  z-index: 9999;
+}
+/* ------------------------------------------------------------------------- */
