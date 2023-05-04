@@ -9803,15 +9803,15 @@ div#post-comment {
 
 /* 头像 */
 .tk-avatar {
-  width: 32px !important;
-  height: 32px !important;
+  width: 50px !important;
+  height: 50px !important;
   box-shadow: var(--heo-shadow-border);
   margin-right: 16px !important;
 }
 
 .tk-avatar.tk-has-avatar {
-  width: 32px !important;
-  height: 32px !important;
+  width: 50px !important;
+  height: 50px !important;
   border-radius: 32px !important;
 }
 
@@ -9824,7 +9824,7 @@ div#post-comment {
 }
 
 img.tk-avatar-img {
-  height: 32px !important;
+  height: 50px !important;
   border-radius: 32px;
   border: var(--style-border-always);
 }
@@ -10146,6 +10146,10 @@ button.el-button.tk-cancel.el-button--default.el-button--small {
 
 .tk-icon.__comments {
   margin-left: 0 !important;
+}
+
+.el-loading-spinner .path {
+  stroke: #45bb89 !important;
 }
 
 .tk-row.actions {

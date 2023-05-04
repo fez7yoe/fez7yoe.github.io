@@ -9,9 +9,9 @@ https://fez7yoe.github.io/tags/index.html
 https://fez7yoe.github.io/categories/index.html
 https://fez7yoe.github.io/about/index.html
 https://fez7yoe.github.io/
-https://fez7yoe.github.io/tags/websiteservice/
 https://fez7yoe.github.io/tags/delivery/
+https://fez7yoe.github.io/tags/websiteservice/
 https://fez7yoe.github.io/tags/bug/
-https://fez7yoe.github.io/categories/greatplan/
 https://fez7yoe.github.io/categories/experience/
+https://fez7yoe.github.io/categories/greatplan/
 https://fez7yoe.github.io/categories/help/
