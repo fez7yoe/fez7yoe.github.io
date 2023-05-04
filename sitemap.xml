@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://fez7yoe.github.io/links/index.html</loc>
+    
+    <lastmod>2023-05-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://fez7yoe.github.io/posts/abf9cfdb/</loc>
     
     <lastmod>2023-05-04</lastmod>
@@ -32,15 +41,6 @@
     <loc>https://fez7yoe.github.io/posts/954ade5a/</loc>
     
     <lastmod>2023-04-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://fez7yoe.github.io/links/index.html</loc>
-    
-    <lastmod>2023-04-24</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
