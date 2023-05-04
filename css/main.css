@@ -9918,6 +9918,7 @@ img.tk-avatar-img {
 .tk-nick {
   font-size: 1rem !important;
   line-height: 32px;
+  margin: 1px 4px 1px -1px !important;
 }
 
 /* 填写项标题 */
@@ -9994,14 +9995,14 @@ img.tk-avatar-img {
 
 /* 所有标签 */
 .tk-tag {
-  margin-left: 4px;
+  margin: 4px 4px 4px 4px;
+  padding: 1px 7.5px  !important;
 }
 
 /* 评论博主标签圆角 */
 .tk-tag-green {
   border-radius: 8px !important;
   border: 0px solid #e1f3d8 !important;
-  font-size: 0.5rem !important;
 }
 
 [data-theme=dark] .tk-tag-green {
@@ -10021,9 +10022,8 @@ img.tk-avatar-img {
 
 /* 评论置顶 */
 .tk-tag-red {
-  border-radius: 4px !important;
+  border-radius: 8px !important;
   border: 0px solid #f3d8d8 !important;
-  font-size: 0.5rem !important;
 }
 
 [data-theme=dark] .tk-tag-red {
