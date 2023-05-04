@@ -1,0 +1,134 @@
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.tk-comments {
+  padding: 10px 40px 10px 40px !important;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.tk-footer {
+  margin: -161px -90px !important;
+  position:absolute;
+  z-index: 100;
+}
+
+.tk-footer a {
+  text-decoration: none;
+  color: #f2f2f2;
+  position: relative;
+}
+
+.tk-footer a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #f2f2f2;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.tk-footer a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+input.el-input__inner {
+  font-family: 'GenSenRounded' !important;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+textarea.el-textarea__inner {
+  font-family: 'GenSenRounded' !important;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* 填写项标题 */
+.el-input-group__append, .el-input-group__prepend {
+  border-radius: 12px 0px 0px 12px !important;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* 输入框 */
+.el-input__inner {
+  padding-left: 8px;
+  border-radius: 0px 12px 12px 0px !important;
+}
+
+.el-input__inner:focus {
+  border: 1px solid white !important;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* 评论输入框 */
+.el-textarea__inner {
+  border-radius: 12px !important;
+  min-height: 100px !important;
+  padding: 16px 16px 40px 16px !important;
+}
+
+.el-textarea__inner:focus {
+  border: 1px solid white !important;
+}
+
+
+.tk-preview-container {
+  border-radius: 12px !important;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* 预览按钮 */
+.el-button {
+  background-color: #1c1c1c !important;
+  border: 1px solid #333 !important;
+  color: #f2f2f2 !important;
+  border-radius: 12px !important;
+  transition: .3s !important;
+}
+
+.el-button:hover {
+  background: #333 !important;
+  border: 1px solid #f2f2f2 !important;
+  color: white !important;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* 表情 */
+.tk-content .tk-owo-emotion {
+  width: 3em;
+  margin: 0px 2px 0px 2px;
+}
+
+.OwO-body {
+  padding: 10px;
+}
+
+.OwO .OwO-body {
+  background-color: #333 !important;
+  border: 1px solid #333 !important;
+  border-radius: 12px !important;
+  color: white !important;
+  transition: .3s;
+}
+
+.OwO .OwO-body:hover {
+  border: 1px solid white !important;
+}
+
+li.OwO-package-active {
+  border-radius: 0 0 12px 12px !important;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.tk-icon.__comments {
+  color: white !important;
+}
+
+.el-loading-spinner .path {
+  stroke: white !important;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////*/

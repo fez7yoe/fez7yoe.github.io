@@ -6,7 +6,7 @@
   <link href="https://fez7yoe.github.io/atom.xml" rel="self"/>
   
   <link href="https://fez7yoe.github.io/"/>
-  <updated>2023-04-26T19:28:22.281Z</updated>
+  <updated>2023-05-04T04:59:16.753Z</updated>
   <id>https://fez7yoe.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>RandomLinks 專案記錄</title>
+    <link href="https://fez7yoe.github.io/posts/abf9cfdb/"/>
+    <id>https://fez7yoe.github.io/posts/abf9cfdb/</id>
+    <published>2023-05-03T17:28:13.000Z</published>
+    <updated>2023-05-04T04:59:16.753Z</updated>
+    
+    
+    <summary type="html">為 RandomLinks 撰寫的誕生文名稱由來Random &amp;#x3D; 隨機，就很直翻Links &amp;#x3D; 連結，因為有很多個連結所以複數要加 s (要被英文老師爆揍ㄌ)所以 RandomLi</summary>
+    
+    
+    
+    <category term="偉大計劃" scheme="https://fez7yoe.github.io/categories/greatplan/"/>
+    
+    
+    <category term="網站服務" scheme="https://fez7yoe.github.io/tags/websiteservice/"/>
+    
+  </entry>
   
   <entry>
     <title>Uber Eats 外送日記</title>
