@@ -110,6 +110,13 @@
 
   
   <url>
+    <loc>https://fez7yoe.github.io/tags/websiteservice/</loc>
+    <lastmod>2023-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://fez7yoe.github.io/tags/delivery/</loc>
     <lastmod>2023-05-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -151,14 +158,14 @@
     <priority>0.2</priority>
   </url>
   
+
+  
   <url>
-    <loc>https://fez7yoe.github.io/tags/websiteservice/</loc>
+    <loc>https://fez7yoe.github.io/categories/greatplan/</loc>
     <lastmod>2023-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
-  
-
   
   <url>
     <loc>https://fez7yoe.github.io/categories/experience/</loc>
@@ -176,13 +183,6 @@
   
   <url>
     <loc>https://fez7yoe.github.io/categories/help/</loc>
-    <lastmod>2023-05-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://fez7yoe.github.io/categories/greatplan/</loc>
     <lastmod>2023-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
