@@ -544,7 +544,7 @@
                     <span class="title">神奇卡片</span>
                     <span class="desc">你看，它翻面了 <i class="fa-solid fa-play"></i></span>
                 </div>
-                <img class="nolazyload" src="https://cdn.jsdelivr.net/gh/fez7yoe/My-Hexo-File/Not-By-AI/TWHK(TC)/Written%20By%20Human/SVG/Written-By-Human-Not-By-AI-Badge-white.svg">
+                <img class="nolazyload" src="/img/icon/hexo.png">
             </div>
         </div>
     </div>
@@ -720,7 +720,7 @@
                 <i class="fa-solid fa-clock-rotate-left"></i>
                 <div class="item-name">最後更新時間：</div>
             </div>
-            <time class="item-count" datetime="Tue May 09 2023 22:42:12 GMT+0800 (台北標準時間)">
+            <time class="item-count" datetime="Wed May 10 2023 01:56:07 GMT+0800 (台北標準時間)">
             </time>
         </div>
     
@@ -812,15 +812,31 @@
                         
                     </a>
                 </div>
-                這裡放著一個關於 <a target="_blank" rel="noopener" href="https://dragcave.net/user/fez7yoe">龍群飼育員</a> 的捲軸，要拿起來看嗎？<br>
-                <a target="_blank" rel="noopener" href="https://dragcave.net/view/3dkmJ"><img src="https://dragcave.net/image/3dkmJ.gif" style="border-width:0" title="龍蛋的收養資訊" alt="Adopt one today!"/></a>
-                <a target="_blank" rel="noopener" href="https://dragcave.net/view/AV3v9"><img src="https://dragcave.net/image/AV3v9.gif" style="border-width:0" title="龍蛋的收養資訊" alt="Adopt one today!"/></a>
-                <a target="_blank" rel="noopener" href="https://dragcave.net/view/RJbMa"><img src="https://dragcave.net/image/RJbMa.gif" style="border-width:0" title="龍蛋的收養資訊" alt="Adopt one today!"/></a>
-                <a target="_blank" rel="noopener" href="https://dragcave.net/view/9LpGe"><img src="https://dragcave.net/image/9LpGe.gif" style="border-width:0" title="龍蛋的收養資訊" alt="Adopt one today!"/></a>
+                這裡放著一個關於 <a target="_blank" rel="noopener" href="https://dragcave.net/user/fez7yoe" title="是誰呢？">龍群飼育員</a> 的捲軸，要拿起來看嗎？<br>
+                <a target="_blank" rel="noopener" href="https://dragcave.net/view/3dkmJ"><img src="https://dragcave.net/image/3dkmJ.gif" style="border-width:0" title="點擊龍蛋看狀態" alt="Adopt one today!"/></a>
+                <a target="_blank" rel="noopener" href="https://dragcave.net/view/AV3v9"><img src="https://dragcave.net/image/AV3v9.gif" style="border-width:0" title="點擊龍蛋看狀態" alt="Adopt one today!"/></a>
+                <a target="_blank" rel="noopener" href="https://dragcave.net/view/RJbMa"><img src="https://dragcave.net/image/RJbMa.gif" style="border-width:0" title="點擊龍蛋看狀態" alt="Adopt one today!"/></a>
+                <a target="_blank" rel="noopener" href="https://dragcave.net/view/9LpGe"><img src="https://dragcave.net/image/9LpGe.gif" style="border-width:0" title="點擊龍蛋看狀態" alt="Adopt one today!"/></a>
             </div>
         </div>
         <div class="footer-banner-right">
-            <a class="footer-banner-link" href="https://github.com/hexojs/hexo" target="_blank" title="使用 Hexo 構成">框架</a>
+            <div class="footer-banner-link">
+                <a id="RunTime"></a><br>
+                <script>
+                    var BootDate = new Date("2022/06/04 15:00:00");
+                    function ShowRunTime(id) {
+                    var NowDate = new Date();
+                    var RunDateM = parseInt(NowDate - BootDate);
+                    var RunDays = Math.floor(RunDateM/(24*3600*1000));
+                    var RunHours = Math.floor(RunDateM%(24*3600*1000)/(3600*1000));
+                    var RunMinutes = Math.floor(RunDateM%(24*3600*1000)%(3600*1000)/(60*1000));
+                    var RunSeconds = Math.round(RunDateM%(24*3600*1000)%(3600*1000)%(60*1000)/1000);
+                    var RunTime = RunDays + "&nbsp;天&nbsp;" + RunHours + "&nbsp;小時&nbsp;" + RunMinutes + "&nbsp;分鐘&nbsp;" + RunSeconds + "&nbsp;秒";
+                    document.getElementById(id).innerHTML = "在宇宙中漂泊了&nbsp;" + RunTime;
+                    }
+                    setInterval("ShowRunTime('RunTime')", 1000);
+                </script>
+            <a class="footer-banner-link" href="https://github.com/hexojs/hexo" target="_blank" title="以 Hexo 為主體">框架</a>
             <a class="footer-banner-link" href="https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic-Next" target="_blank" title="搭配 Acrylic-Next 主題">主題</a>
             <a class="footer-banner-link" href="/atom.xml" target="_blank" title="使用 Atom 供稿格式">訂閱</a>
             <a class="footer-banner-link" href="/sitemap.xml" target="_blank" title="給機器人看的">地圖</a>
@@ -829,7 +845,7 @@
                     萌備
                 </a>
             
-            <a class="footer-banner-link cc" target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/3.0/tw/" title="創用 CC 授權條款">
+            <a class="footer-banner-link cc" target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/3.0/tw/" title="創用 CC 授權條款"><br>
                 <i class="fa-brands fa-creative-commons"></i><i class="fa-brands fa-creative-commons-by"></i><i class="fa-brands fa-creative-commons-nc"></i><i class="fa-brands fa-creative-commons-nd"></i>
             </a>
         </div>

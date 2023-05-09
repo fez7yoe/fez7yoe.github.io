@@ -444,7 +444,32 @@
                 
                 <li class="item">
                     <div class="bber-content">
-    <p class="datacont">個站商店的帳號被禁ㄌ，原來雙方想法不同的第一件事是先叫對方自省，厲害了我的站長，一言堂發揮得很充分</p>
+    <p class="datacont">我：「嗯～AI 繪圖進步了好多」 還是我：「修但幾勒，怎麼濫用 AI 繪圖的人也越來越多，甚至理所當然地用原畫師的畫風來賺錢？？？」</p>
+        
+</div>
+                    <hr>
+                    <div class="bber-bottom">
+    <div class="bber-info">
+        <div class="bber-info-time">
+            <i class="fas fa-calendar-days"></i>
+            <time class="datetime" datetime="2023-05-10T09:00:12+08:00"></time>
+        </div>
+        
+            <a class="bber-content-link" target="_blank" rel="noopener" href="https://youtu.be/AyrBTnH3ZwE" title="點擊網址前往目的地">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> 有附網址
+            </a>   
+            
+    </div>
+    <div class="bber-reply">
+        <i class="fa-solid fa-message"></i>
+    </div>
+</div>
+                </li>
+            
+                
+                <li class="item">
+                    <div class="bber-content">
+    <p class="datacont">個站商店的帳號被禁ㄌ，原來雙方政治傾向不同的第一件事是先叫對方自省，厲害了我的站長，一言堂發揮得很充份</p>
         
 </div>
                     <hr>
@@ -515,7 +540,7 @@
                 
                 <li class="item">
                     <div class="bber-content">
-    <p class="datacont">至今逛了不錯多的部落格，但會幫引用素材建立一個索引頁面或文章的部落格，這是頭一次看到，真心感動</p>
+    <p class="datacont">至今逛了不錯多的部落格，會幫引用素材建立一個索引頁面或文章的部落格，這是頭一次看到，真心感動</p>
         
 </div>
                     <hr>
@@ -814,15 +839,31 @@
                         
                     </a>
                 </div>
-                這裡放著一個關於 <a target="_blank" rel="noopener" href="https://dragcave.net/user/fez7yoe">龍群飼育員</a> 的捲軸，要拿起來看嗎？<br>
-                <a target="_blank" rel="noopener" href="https://dragcave.net/view/3dkmJ"><img src="https://dragcave.net/image/3dkmJ.gif" style="border-width:0" title="龍蛋的收養資訊" alt="Adopt one today!"/></a>
-                <a target="_blank" rel="noopener" href="https://dragcave.net/view/AV3v9"><img src="https://dragcave.net/image/AV3v9.gif" style="border-width:0" title="龍蛋的收養資訊" alt="Adopt one today!"/></a>
-                <a target="_blank" rel="noopener" href="https://dragcave.net/view/RJbMa"><img src="https://dragcave.net/image/RJbMa.gif" style="border-width:0" title="龍蛋的收養資訊" alt="Adopt one today!"/></a>
-                <a target="_blank" rel="noopener" href="https://dragcave.net/view/9LpGe"><img src="https://dragcave.net/image/9LpGe.gif" style="border-width:0" title="龍蛋的收養資訊" alt="Adopt one today!"/></a>
+                這裡放著一個關於 <a target="_blank" rel="noopener" href="https://dragcave.net/user/fez7yoe" title="是誰呢？">龍群飼育員</a> 的捲軸，要拿起來看嗎？<br>
+                <a target="_blank" rel="noopener" href="https://dragcave.net/view/3dkmJ"><img src="https://dragcave.net/image/3dkmJ.gif" style="border-width:0" title="點擊龍蛋看狀態" alt="Adopt one today!"/></a>
+                <a target="_blank" rel="noopener" href="https://dragcave.net/view/AV3v9"><img src="https://dragcave.net/image/AV3v9.gif" style="border-width:0" title="點擊龍蛋看狀態" alt="Adopt one today!"/></a>
+                <a target="_blank" rel="noopener" href="https://dragcave.net/view/RJbMa"><img src="https://dragcave.net/image/RJbMa.gif" style="border-width:0" title="點擊龍蛋看狀態" alt="Adopt one today!"/></a>
+                <a target="_blank" rel="noopener" href="https://dragcave.net/view/9LpGe"><img src="https://dragcave.net/image/9LpGe.gif" style="border-width:0" title="點擊龍蛋看狀態" alt="Adopt one today!"/></a>
             </div>
         </div>
         <div class="footer-banner-right">
-            <a class="footer-banner-link" href="https://github.com/hexojs/hexo" target="_blank" title="使用 Hexo 構成">框架</a>
+            <div class="footer-banner-link">
+                <a id="RunTime"></a><br>
+                <script>
+                    var BootDate = new Date("2022/06/04 15:00:00");
+                    function ShowRunTime(id) {
+                    var NowDate = new Date();
+                    var RunDateM = parseInt(NowDate - BootDate);
+                    var RunDays = Math.floor(RunDateM/(24*3600*1000));
+                    var RunHours = Math.floor(RunDateM%(24*3600*1000)/(3600*1000));
+                    var RunMinutes = Math.floor(RunDateM%(24*3600*1000)%(3600*1000)/(60*1000));
+                    var RunSeconds = Math.round(RunDateM%(24*3600*1000)%(3600*1000)%(60*1000)/1000);
+                    var RunTime = RunDays + "&nbsp;天&nbsp;" + RunHours + "&nbsp;小時&nbsp;" + RunMinutes + "&nbsp;分鐘&nbsp;" + RunSeconds + "&nbsp;秒";
+                    document.getElementById(id).innerHTML = "在宇宙中漂泊了&nbsp;" + RunTime;
+                    }
+                    setInterval("ShowRunTime('RunTime')", 1000);
+                </script>
+            <a class="footer-banner-link" href="https://github.com/hexojs/hexo" target="_blank" title="以 Hexo 為主體">框架</a>
             <a class="footer-banner-link" href="https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic-Next" target="_blank" title="搭配 Acrylic-Next 主題">主題</a>
             <a class="footer-banner-link" href="/atom.xml" target="_blank" title="使用 Atom 供稿格式">訂閱</a>
             <a class="footer-banner-link" href="/sitemap.xml" target="_blank" title="給機器人看的">地圖</a>
@@ -831,7 +872,7 @@
                     萌備
                 </a>
             
-            <a class="footer-banner-link cc" target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/3.0/tw/" title="創用 CC 授權條款">
+            <a class="footer-banner-link cc" target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/3.0/tw/" title="創用 CC 授權條款"><br>
                 <i class="fa-brands fa-creative-commons"></i><i class="fa-brands fa-creative-commons-by"></i><i class="fa-brands fa-creative-commons-nc"></i><i class="fa-brands fa-creative-commons-nd"></i>
             </a>
         </div>
