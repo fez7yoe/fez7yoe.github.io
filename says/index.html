@@ -18,6 +18,8 @@
 <link rel="stylesheet" href="/css/custom.css">
 
 
+    <script data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}" src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/pace/1.2.4/pace.min.js"></script>
+
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -35,10 +37,100 @@
 
 
 
-<script>var GLOBALCONFIG = {"root":"/","runtime":"2022-06-04 15:00:00","lazyload":{"enable":false,"error":"/img/acrylic.png"},"hightlight":{"enable":false,"limit":200},"lightbox":true,"randomlinks":true,"lang":{"theme":{"dark":"已切換成 深色 模式","light":"已切換成 淺色 模式"},"copy":{"success":"複製成功 ヽ(●´∀`●)ﾉ","error":"複製失敗 ( ºΔº )"},"backtop":"電梯向上","time":{"recent":"最近","yesterday":"昨天","berforeyesterday":"前天","daybefore":"天前","runtime":"天"},"sayhello":{"morning":"早安","noon":"午安","afternoon":"下午茶時間","night":"晚安","goodnight":"宵夜時間","iam":""},"search":{"empty":"搜尋結果為空","hit":"已找到 ${query} 項結果","placeholder":"輸入關鍵字以查詢"}},"covercolor":false};</script><script id="site-config">var PAGECONFIG = {"is_home":false,"is_post":false,"is_page":true,"page":"says","toc":false,"comment":true};</script>
+<script>var GLOBALCONFIG = {"root":"/","runtime":"2022-06-04 15:00:00","lazyload":{"enable":false,"error":"/img/acrylic.png"},"hightlight":{"enable":false,"limit":200},"lightbox":true,"randomlinks":true,"lang":{"theme":{"dark":"變暗囉","light":"變亮囉"},"copy":{"success":"複製成功 ヽ(●´∀`●)ﾉ","error":"複製失敗 ( ºΔº )"},"backtop":"電梯向上","time":{"recent":"最近","yesterday":"昨天","berforeyesterday":"前天","daybefore":"天前","runtime":"天"},"sayhello":{"morning":"早安","noon":"午安","afternoon":"下午茶時間","night":"晚安","goodnight":"宵夜時間","iam":""},"search":{"empty":"搜尋結果為空","hit":"已找到 ${query} 項結果","placeholder":"輸入關鍵字以查詢"}},"covercolor":false};</script><script id="site-config">var PAGECONFIG = {"is_home":false,"is_post":false,"is_page":true,"page":"says","toc":false,"comment":true};</script>
     <meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="小被被好好摸" type="application/atom+xml">
 </head>
     <body id="body">
+        
+            <div id="loading-box" onclick="preloader.endLoading();" class style="zoom: 1;">
+    <div class="loading-bg">
+        <img class="loading-img nolazyload" alt="loading image"
+            src="https://cdn.jsdelivr.net/gh/fez7yoe/My-Hexo-File/avatar/fez7yoe.png">
+        </div>
+</div>
+<script>
+    const preloader = {
+        endLoading: () => {
+            document.getElementById('loading-box').classList.add("loaded")
+        },
+        initLoading: () => {
+            document.getElementById('loading-box').classList.remove("loaded")
+        },
+        removePaceDone: () => {
+            document.getElementById('body').classList = 'pace-done'
+        }
+    }
+    window.addEventListener('load',()=> { preloader.endLoading() })
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+</script>
+<style>
+    #loading-box {
+        -webkit-user-select: none;
+    }
+
+    #loading-box .loading-bg {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background: var(--heo-background);
+        z-index: 1999;
+        opacity: 1;
+        transition: 0.2s;
+        pointer-events: all;
+        animation: showLoading 0.3s 0s backwards;
+    }
+
+    .loading-img {
+        border-radius: 50%;
+    }
+
+    #loading-box.loaded .loading-bg {
+        pointer-events: none;
+        transition: 0.2s;
+        animation: hideLoading 0.3s 0s forwards;
+    }
+
+    #loading-box .loading-img {
+        width: 100px;
+        margin: auto;
+        animation-duration: 0.2s;
+        animation-name: loadingAction;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes loadingAction {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0.6;
+        }
+    }
+
+    @keyframes hideLoading {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+
+    @keyframes showLoading {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+</style>
         
         <div id="console" style="zoom: 1;" class="">
     <div class="close-btn" onclick="acrylic.hideConsole()" href="javascript:void(0);">
@@ -167,7 +259,7 @@
                         <li>
                             <a class="site-page child" href="/randomlinks/index.html">
                                 <i class="fa-solid fa-house"></i>
-                                <span> 前往首頁</span>
+                                <span> 專案首頁</span>
                             </a>
                         </li>
                     
@@ -343,7 +435,7 @@
                         <li>
                             <a class="site-page child" href="/randomlinks/index.html">
                                 <i class="fa-solid fa-house"></i>
-                                <span> 前往首頁</span>
+                                <span> 專案首頁</span>
                             </a>
                         </li>
                     
@@ -369,9 +461,14 @@
             
 
     <div class="nav-button" id="randomPost_button">
+        <a class="site-page" onclick="acrylic.switchDarkMode()" title="亮暗切換">
+            <i class="fa-solid fa-circle-half-stroke" style="font-size: 1.15rem;text-align: center;"></i>
+        </a>
+    </div>
+    <div class="nav-button" id="randomPost_button">
         <a class="site-page" onclick="toRandomPost()"
-            title="隨機瀏覽一篇文章">
-            <i class="fas fa-shuffle" style="font-size: 1rem;"></i>
+            title="隨機瀏覽文章">
+            <i class="fas fa-shuffle" style="font-size: 1.15rem;text-align: center;"></i>
         </a>
     </div>
 
@@ -379,7 +476,7 @@
 
 <div class="nav-button" id="randomPost_button" onclick="goBottom()">
     <a class="site-page" title="電梯向下">
-        <i class="fas fa-arrow-down" style="font-size: 1rem;"></i>
+        <i class="fas fa-arrow-down" style="font-size: 1.15rem;text-align: center;"></i>
     </a>
     <script>
         function goBottom() {
@@ -390,13 +487,13 @@
 </div>
 <div class="nav-button" id="nav-totop" onclick="acrylic.toTop()">
     <a class="totopbtn">
-        <i class="fas fa-arrow-up"></i>
+        <i class="fas fa-arrow-up" style="font-size: 1.15rem;text-align: center;"></i>
         <span id="percent">0</span>
     </a>
 </div>
 <div id="toggle-menu">
     <a class="site-page">
-        <i class="fas fa-bars fa-fw" style="font-size: 1rem;"></i>
+        <i class="fas fa-bars fa-fw" style="font-size: 1.15rem;text-align: center;"></i>
     </a>
 </div>
         </div>
@@ -423,7 +520,7 @@
                 
                 <li class="item">
                     <div class="bber-content">
-    <p class="datacont">手機推薦以 「深色模式」 瀏覽，點開右上角三條橫槓即可調整</p>
+    <p class="datacont">歡迎光臨，請隨意逛，這裡會循環顯示作者最近的靈壓</p>
         
 </div>
                     <hr>
@@ -431,7 +528,7 @@
     <div class="bber-info">
         <div class="bber-info-time">
             <i class="fas fa-calendar-days"></i>
-            <time class="datetime" datetime="2023-05-01T08:40:20+08:00"></time>
+            <time class="datetime" datetime="2023-05-20T08:22:30+08:00"></time>
         </div>
             
     </div>
@@ -441,7 +538,7 @@
                 
                 <li class="item">
                     <div class="bber-content">
-    <p class="datacont">教官不是學校裡面最守紀律的人嗎？怎麼這種噁男也當得起教官這個職位？</p>
+    <p class="datacont">教官不是學校裡面最嚴守紀律的人嗎？怎麼卻出現這種噁男？</p>
         
 </div>
                     <hr>
@@ -452,7 +549,7 @@
             <time class="datetime" datetime="2023-05-16T08:06:17+08:00"></time>
         </div>
         
-            <a class="bber-content-link" target="_blank" rel="noopener" href="https://twitter.com/llimitlessmary/status/1658435086826758146?s=20" title="點擊網址前往目的地">
+            <a class="bber-content-link" target="_blank" rel="noopener" href="https://twitter.com/llimitlessmary/status/1658435086826758146?s=20" title="點擊前往目的地">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i> 有附網址
             </a>   
             
@@ -474,7 +571,7 @@
             <time class="datetime" datetime="2023-05-17T07:54:54+08:00"></time>
         </div>
         
-            <a class="bber-content-link" target="_blank" rel="noopener" href="https://twitter.com/de_b0o/status/1656284605073219584?s=20" title="點擊網址前往目的地">
+            <a class="bber-content-link" target="_blank" rel="noopener" href="https://twitter.com/de_b0o/status/1656284605073219584?s=20" title="點擊前往目的地">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i> 有附網址
             </a>   
             
@@ -485,7 +582,7 @@
                 
                 <li class="item">
                     <div class="bber-content">
-    <p class="datacont">我：「唉呦～AI 繪圖進步了好多」 還是我：「修但幾勒，怎麼濫用 AI 繪圖的人也越來越多，甚至理所當然地用原畫師的畫風來賺錢？？？」</p>
+    <p class="datacont">我：「唉呦～AI 繪圖進步了好多」 還是我：「修但幾勒，怎麼濫用 AI 繪圖的人也越來越多，甚至還理所當然地用原畫師的畫風來賺錢？？？」</p>
         
 </div>
                     <hr>
@@ -496,7 +593,7 @@
             <time class="datetime" datetime="2023-05-10T09:00:12+08:00"></time>
         </div>
         
-            <a class="bber-content-link" target="_blank" rel="noopener" href="https://youtu.be/AyrBTnH3ZwE" title="點擊網址前往目的地">
+            <a class="bber-content-link" target="_blank" rel="noopener" href="https://youtu.be/AyrBTnH3ZwE" title="點擊前往目的地">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i> 有附網址
             </a>   
             
@@ -507,7 +604,7 @@
                 
                 <li class="item">
                     <div class="bber-content">
-    <p class="datacont">原來雙方政治傾向不同的第一件事是先叫對方 「自省」，厲害了我的站長，大一統思想跟一言堂作為都發揮得很充份、很有中國味；事發經過就，個站商店的帳號被禁ㄌ，因為該平台的站長發現我的部落格裡散發著台灣早就獨立的味道，嫌臭並直接將我的帳號禁掉，後來我上平台晃晃的時候發現登不進去了，於是寄了一封信詢問情況，回信的內容可以從網址那看，寫個信還可以錯字，是覺得台獨思想很容易擴散？還是怕有人會監聽回信內容而故意避開關鍵字？</p>
+    <p class="datacont">原來雙方政治傾向不同的第一件事是先叫對方 「自省」，厲害了我的站長，看來我為人不夠親中這一點還是被你識破ㄌ，事發經過就是...個站商店的帳號被禁ㄌ，因為該平台的站長發現我的部落格裡散發著台灣早就獨立的味道，嫌臭並直接將我的帳號禁掉，後來我上平台晃晃的時候發現登不進去了，於是寄了一封信詢問情況，回信的內容可以從網址那裡瀏覽，總之，寫個信還可以錯字真的很解，而且還是站長回的！！</p>
         
 </div>
                     <hr>
@@ -518,7 +615,7 @@
             <time class="datetime" datetime="2023-05-08T03:18:51+08:00"></time>
         </div>
         
-            <a class="bber-content-link" target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/fez7yoe/My-Hexo-File/ban/storeweb.png" title="點擊網址前往目的地">
+            <a class="bber-content-link" target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/fez7yoe/My-Hexo-File/ban/storeweb.png" title="點擊前往目的地">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i> 有附網址
             </a>   
             
@@ -540,7 +637,7 @@
             <time class="datetime" datetime="2023-05-06T10:14:20+08:00"></time>
         </div>
         
-            <a class="bber-content-link" target="_blank" rel="noopener" href="https://youtu.be/xnX8Lk-iSCo" title="點擊網址前往目的地">
+            <a class="bber-content-link" target="_blank" rel="noopener" href="https://youtu.be/xnX8Lk-iSCo" title="點擊前往目的地">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i> 有附網址
             </a>   
             
@@ -580,7 +677,7 @@
             <time class="datetime" datetime="2023-05-05T00:23:32+08:00"></time>
         </div>
         
-            <a class="bber-content-link" target="_blank" rel="noopener" href="https://www.himiku.com/archives/pic-source.html" title="點擊網址前往目的地">
+            <a class="bber-content-link" target="_blank" rel="noopener" href="https://www.himiku.com/archives/pic-source.html" title="點擊前往目的地">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i> 有附網址
             </a>   
             
@@ -591,7 +688,7 @@
                 
                 <li class="item">
                     <div class="bber-content">
-    <p class="datacont">對餒，以前上國小、國中時的歷史、地理，介紹 「中華人民共和國」 的比例無可救藥的多，現在才意識到這情況很荒謬，搞得好像全地球只有 「中華人民共和國」 值得學習似的 (白眼都快翻到後腦勺)</p>
+    <p class="datacont">對餒，以前上國小、國中時的地理、歷史，介紹 「中華人民共和國」 的比例無可救藥的多，現在才意識到這種情況很荒謬，搞得好像全地球只有 「中華人民共和國」 值得學習似的，白眼都快翻到後腦勺...其他篇章拿來教其他國家跟台灣本土不是更好？不然就真的只是在幫中國養中國人而已 (唉？經歷了這些洗腦教育的我，怎麼反而進化成台獨了)</p>
         
 </div>
                     <hr>
@@ -602,7 +699,7 @@
             <time class="datetime" datetime="2023-05-01T08:44:26+08:00"></time>
         </div>
         
-            <a class="bber-content-link" target="_blank" rel="noopener" href="https://twitter.com/angie_c_kitty1/status/1652505380449312774?s=20" title="點擊網址前往目的地">
+            <a class="bber-content-link" target="_blank" rel="noopener" href="https://twitter.com/angie_c_kitty1/status/1652505380449312774?s=20" title="點擊前往目的地">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i> 有附網址
             </a>   
             
@@ -642,7 +739,7 @@
             <time class="datetime" datetime="2023-04-30T11:06:32+08:00"></time>
         </div>
         
-            <a class="bber-content-link" target="_blank" rel="noopener" href="https://twitter.com/antenna2667/status/1652272328510963712?s=20" title="點擊網址前往目的地">
+            <a class="bber-content-link" target="_blank" rel="noopener" href="https://twitter.com/antenna2667/status/1652272328510963712?s=20" title="點擊前往目的地">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i> 有附網址
             </a>   
             
@@ -700,7 +797,7 @@
             <time class="datetime" datetime="2023-04-26T10:58:43+08:00"></time>
         </div>
         
-            <a class="bber-content-link" target="_blank" rel="noopener" href="https://www.youtube.com/live/tkNxeoWTb1s?feature=share" title="點擊網址前往目的地">
+            <a class="bber-content-link" target="_blank" rel="noopener" href="https://www.youtube.com/live/tkNxeoWTb1s?feature=share" title="點擊前往目的地">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i> 有附網址
             </a>   
             
@@ -814,7 +911,7 @@
             <h3 class="footer-title">隨心遊走</h3>
             <div class="footer-links">
                 
-                    <a class="footer-item" href="/randomlinks/index.html" title="前往首頁" rel="noopener external nofollow noreferrer">前往首頁</a>
+                    <a class="footer-item" href="/randomlinks/index.html" title="專案首頁" rel="noopener external nofollow noreferrer">專案首頁</a>
                 
                     <a class="footer-item" href="/posts/abf9cfdb/" title="專案簡介" rel="noopener external nofollow noreferrer">專案簡介</a>
                     
@@ -834,13 +931,13 @@
         </div>
     
 </div>
-<div id="footer-banner">
-    <div class="footer-banner-links">
-        <div class="footer-banner-left">
-            <div id="footer-banner-tips">
+<div id="footer-section">
+    <div class="footer-section-links">
+        <div class="footer-section-left">
+            <div id="footer-section-tips">
                 <div class="copyright">©2022 - 2023 By 
-                    <a class="footer-banner-link" href="/" rel="external nofollow" title="回到首頁">綠武舞 fez7yoe</a>
-                    <a class="footer-banner-link">
+                    <a class="footer-section-link" href="/" rel="external nofollow" title="回到首頁">綠武舞 fez7yoe</a>
+                    <a class="footer-section-link">
                         
                     </a>
                 </div>
@@ -851,8 +948,8 @@
                 <a target="_blank" rel="noopener" href="https://dragcave.net/view/9LpGe"><img src="https://dragcave.net/image/9LpGe.gif" style="border-width:0" title="摸摸牠" alt="Adopt one today!"/></a>
             </div>
         </div>
-        <div class="footer-banner-right">
-            <div class="footer-banner-link">
+        <div class="footer-section-right">
+            <div class="footer-section-link">
                 <a id="RunTime"></a><br>
                 <script>
                     var BootDate = new Date("2022/06/04 15:00:00");
@@ -868,16 +965,16 @@
                     }
                     setInterval("ShowRunTime('RunTime')", 1000);
                 </script>
-            <a class="footer-banner-link" href="https://github.com/hexojs/hexo" target="_blank" title="以 Hexo 框架構成">框架</a>
-            <a class="footer-banner-link" href="https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic-Next" target="_blank" title="再搭配 Acrylic-Next 為主題">主題</a>
-            <a class="footer-banner-link" href="/atom.xml" target="_blank" title="提供 Atom 供稿格式">訂閱</a>
-            <a class="footer-banner-link" href="/sitemap.xml" target="_blank" title="給爬蟲機器人看的">地圖</a>
+            <a class="footer-section-link" href="https://github.com/hexojs/hexo" target="_blank" title="以 Hexo 框架構成">框架</a>
+            <a class="footer-section-link" href="https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic-Next" target="_blank" title="再搭配 Acrylic-Next 為主題">主題</a>
+            <a class="footer-section-link" href="/atom.xml" target="_blank" title="提供 Atom 供稿格式">訂閱</a>
+            <a class="footer-section-link" href="/sitemap.xml" target="_blank" title="給爬蟲機器人看的">地圖</a>
             
-                <a class="footer-banner-link" target="_blank" href="https://icp.gov.moe/?keyword=20220535" rel="noopener external nofollow noreferrer noopener" title="在異次元國度裡所選擇的編號">
+                <a class="footer-section-link" target="_blank" href="https://icp.gov.moe/?keyword=20220535" rel="noopener external nofollow noreferrer noopener" title="在異次元國度裡所選擇的編號">
                     萌備
                 </a>
             
-            <a class="footer-banner-link cc" target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/3.0/tw/" title="創用 CC 授權條款"><br>
+            <a class="footer-section-link cc" target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/3.0/tw/" title="創用 CC 授權條款"><br>
                 <i class="fa-brands fa-creative-commons"></i><i class="fa-brands fa-creative-commons-by"></i><i class="fa-brands fa-creative-commons-nc"></i><i class="fa-brands fa-creative-commons-nd"></i>
             </a>
         </div>

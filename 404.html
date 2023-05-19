@@ -18,6 +18,8 @@
 <link rel="stylesheet" href="/css/custom.css">
 
 
+    <script data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}" src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/pace/1.2.4/pace.min.js"></script>
+
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -35,10 +37,100 @@
 
 
 
-<script>var GLOBALCONFIG = {"root":"/","runtime":"2022-06-04 15:00:00","lazyload":{"enable":false,"error":"/img/acrylic.png"},"hightlight":{"enable":false,"limit":200},"lightbox":true,"randomlinks":true,"lang":{"theme":{"dark":"已切換成 深色 模式","light":"已切換成 淺色 模式"},"copy":{"success":"複製成功 ヽ(●´∀`●)ﾉ","error":"複製失敗 ( ºΔº )"},"backtop":"電梯向上","time":{"recent":"最近","yesterday":"昨天","berforeyesterday":"前天","daybefore":"天前","runtime":"天"},"sayhello":{"morning":"早安","noon":"午安","afternoon":"下午茶時間","night":"晚安","goodnight":"宵夜時間","iam":""},"search":{"empty":"搜尋結果為空","hit":"已找到 ${query} 項結果","placeholder":"輸入關鍵字以查詢"}},"covercolor":false};</script><script id="site-config">var PAGECONFIG = {"is_home":false,"is_post":false,"is_page":false,"page":false,"comment":false};</script>
+<script>var GLOBALCONFIG = {"root":"/","runtime":"2022-06-04 15:00:00","lazyload":{"enable":false,"error":"/img/acrylic.png"},"hightlight":{"enable":false,"limit":200},"lightbox":true,"randomlinks":true,"lang":{"theme":{"dark":"變暗囉","light":"變亮囉"},"copy":{"success":"複製成功 ヽ(●´∀`●)ﾉ","error":"複製失敗 ( ºΔº )"},"backtop":"電梯向上","time":{"recent":"最近","yesterday":"昨天","berforeyesterday":"前天","daybefore":"天前","runtime":"天"},"sayhello":{"morning":"早安","noon":"午安","afternoon":"下午茶時間","night":"晚安","goodnight":"宵夜時間","iam":""},"search":{"empty":"搜尋結果為空","hit":"已找到 ${query} 項結果","placeholder":"輸入關鍵字以查詢"}},"covercolor":false};</script><script id="site-config">var PAGECONFIG = {"is_home":false,"is_post":false,"is_page":false,"page":false,"comment":false};</script>
     <meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="小被被好好摸" type="application/atom+xml">
 </head>
     <body id="body">
+        
+            <div id="loading-box" onclick="preloader.endLoading();" class style="zoom: 1;">
+    <div class="loading-bg">
+        <img class="loading-img nolazyload" alt="loading image"
+            src="https://cdn.jsdelivr.net/gh/fez7yoe/My-Hexo-File/avatar/fez7yoe.png">
+        </div>
+</div>
+<script>
+    const preloader = {
+        endLoading: () => {
+            document.getElementById('loading-box').classList.add("loaded")
+        },
+        initLoading: () => {
+            document.getElementById('loading-box').classList.remove("loaded")
+        },
+        removePaceDone: () => {
+            document.getElementById('body').classList = 'pace-done'
+        }
+    }
+    window.addEventListener('load',()=> { preloader.endLoading() })
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+</script>
+<style>
+    #loading-box {
+        -webkit-user-select: none;
+    }
+
+    #loading-box .loading-bg {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background: var(--heo-background);
+        z-index: 1999;
+        opacity: 1;
+        transition: 0.2s;
+        pointer-events: all;
+        animation: showLoading 0.3s 0s backwards;
+    }
+
+    .loading-img {
+        border-radius: 50%;
+    }
+
+    #loading-box.loaded .loading-bg {
+        pointer-events: none;
+        transition: 0.2s;
+        animation: hideLoading 0.3s 0s forwards;
+    }
+
+    #loading-box .loading-img {
+        width: 100px;
+        margin: auto;
+        animation-duration: 0.2s;
+        animation-name: loadingAction;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes loadingAction {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0.6;
+        }
+    }
+
+    @keyframes hideLoading {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+
+    @keyframes showLoading {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+</style>
         
         <div id="console" style="zoom: 1;" class="">
     <div class="close-btn" onclick="acrylic.hideConsole()" href="javascript:void(0);">
@@ -167,7 +259,7 @@
                         <li>
                             <a class="site-page child" href="/randomlinks/index.html">
                                 <i class="fa-solid fa-house"></i>
-                                <span> 前往首頁</span>
+                                <span> 專案首頁</span>
                             </a>
                         </li>
                     

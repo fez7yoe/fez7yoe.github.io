@@ -18,6 +18,8 @@
 <link rel="stylesheet" href="/css/custom.css">
 
 
+    <script data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}" src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/pace/1.2.4/pace.min.js"></script>
+
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -35,10 +37,100 @@
 
 
 
-<script>var GLOBALCONFIG = {"root":"/","runtime":"2022-06-04 15:00:00","lazyload":{"enable":false,"error":"/img/acrylic.png"},"hightlight":{"enable":false,"limit":200},"lightbox":true,"randomlinks":true,"lang":{"theme":{"dark":"已切換成 深色 模式","light":"已切換成 淺色 模式"},"copy":{"success":"複製成功 ヽ(●´∀`●)ﾉ","error":"複製失敗 ( ºΔº )"},"backtop":"電梯向上","time":{"recent":"最近","yesterday":"昨天","berforeyesterday":"前天","daybefore":"天前","runtime":"天"},"sayhello":{"morning":"早安","noon":"午安","afternoon":"下午茶時間","night":"晚安","goodnight":"宵夜時間","iam":""},"search":{"empty":"搜尋結果為空","hit":"已找到 ${query} 項結果","placeholder":"輸入關鍵字以查詢"}},"covercolor":false};</script><script id="site-config">var PAGECONFIG = {"is_home":false,"is_post":false,"is_page":true,"page":"about","toc":false,"comment":true};</script>
+<script>var GLOBALCONFIG = {"root":"/","runtime":"2022-06-04 15:00:00","lazyload":{"enable":false,"error":"/img/acrylic.png"},"hightlight":{"enable":false,"limit":200},"lightbox":true,"randomlinks":true,"lang":{"theme":{"dark":"變暗囉","light":"變亮囉"},"copy":{"success":"複製成功 ヽ(●´∀`●)ﾉ","error":"複製失敗 ( ºΔº )"},"backtop":"電梯向上","time":{"recent":"最近","yesterday":"昨天","berforeyesterday":"前天","daybefore":"天前","runtime":"天"},"sayhello":{"morning":"早安","noon":"午安","afternoon":"下午茶時間","night":"晚安","goodnight":"宵夜時間","iam":""},"search":{"empty":"搜尋結果為空","hit":"已找到 ${query} 項結果","placeholder":"輸入關鍵字以查詢"}},"covercolor":false};</script><script id="site-config">var PAGECONFIG = {"is_home":false,"is_post":false,"is_page":true,"page":"about","toc":false,"comment":true};</script>
     <meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="小被被好好摸" type="application/atom+xml">
 </head>
     <body id="body">
+        
+            <div id="loading-box" onclick="preloader.endLoading();" class style="zoom: 1;">
+    <div class="loading-bg">
+        <img class="loading-img nolazyload" alt="loading image"
+            src="https://cdn.jsdelivr.net/gh/fez7yoe/My-Hexo-File/avatar/fez7yoe.png">
+        </div>
+</div>
+<script>
+    const preloader = {
+        endLoading: () => {
+            document.getElementById('loading-box').classList.add("loaded")
+        },
+        initLoading: () => {
+            document.getElementById('loading-box').classList.remove("loaded")
+        },
+        removePaceDone: () => {
+            document.getElementById('body').classList = 'pace-done'
+        }
+    }
+    window.addEventListener('load',()=> { preloader.endLoading() })
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+</script>
+<style>
+    #loading-box {
+        -webkit-user-select: none;
+    }
+
+    #loading-box .loading-bg {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background: var(--heo-background);
+        z-index: 1999;
+        opacity: 1;
+        transition: 0.2s;
+        pointer-events: all;
+        animation: showLoading 0.3s 0s backwards;
+    }
+
+    .loading-img {
+        border-radius: 50%;
+    }
+
+    #loading-box.loaded .loading-bg {
+        pointer-events: none;
+        transition: 0.2s;
+        animation: hideLoading 0.3s 0s forwards;
+    }
+
+    #loading-box .loading-img {
+        width: 100px;
+        margin: auto;
+        animation-duration: 0.2s;
+        animation-name: loadingAction;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes loadingAction {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0.6;
+        }
+    }
+
+    @keyframes hideLoading {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+
+    @keyframes showLoading {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+</style>
         
         <div id="console" style="zoom: 1;" class="">
     <div class="close-btn" onclick="acrylic.hideConsole()" href="javascript:void(0);">
@@ -167,7 +259,7 @@
                         <li>
                             <a class="site-page child" href="/randomlinks/index.html">
                                 <i class="fa-solid fa-house"></i>
-                                <span> 前往首頁</span>
+                                <span> 專案首頁</span>
                             </a>
                         </li>
                     
@@ -343,7 +435,7 @@
                         <li>
                             <a class="site-page child" href="/randomlinks/index.html">
                                 <i class="fa-solid fa-house"></i>
-                                <span> 前往首頁</span>
+                                <span> 專案首頁</span>
                             </a>
                         </li>
                     
@@ -369,9 +461,14 @@
             
 
     <div class="nav-button" id="randomPost_button">
+        <a class="site-page" onclick="acrylic.switchDarkMode()" title="亮暗切換">
+            <i class="fa-solid fa-circle-half-stroke" style="font-size: 1.15rem;text-align: center;"></i>
+        </a>
+    </div>
+    <div class="nav-button" id="randomPost_button">
         <a class="site-page" onclick="toRandomPost()"
-            title="隨機瀏覽一篇文章">
-            <i class="fas fa-shuffle" style="font-size: 1rem;"></i>
+            title="隨機瀏覽文章">
+            <i class="fas fa-shuffle" style="font-size: 1.15rem;text-align: center;"></i>
         </a>
     </div>
 
@@ -379,7 +476,7 @@
 
 <div class="nav-button" id="randomPost_button" onclick="goBottom()">
     <a class="site-page" title="電梯向下">
-        <i class="fas fa-arrow-down" style="font-size: 1rem;"></i>
+        <i class="fas fa-arrow-down" style="font-size: 1.15rem;text-align: center;"></i>
     </a>
     <script>
         function goBottom() {
@@ -390,13 +487,13 @@
 </div>
 <div class="nav-button" id="nav-totop" onclick="acrylic.toTop()">
     <a class="totopbtn">
-        <i class="fas fa-arrow-up"></i>
+        <i class="fas fa-arrow-up" style="font-size: 1.15rem;text-align: center;"></i>
         <span id="percent">0</span>
     </a>
 </div>
 <div id="toggle-menu">
     <a class="site-page">
-        <i class="fas fa-bars fa-fw" style="font-size: 1rem;"></i>
+        <i class="fas fa-bars fa-fw" style="font-size: 1.15rem;text-align: center;"></i>
     </a>
 </div>
         </div>
@@ -757,7 +854,7 @@
       </div>
     </div>
   </div>
-  <div class="author-content-item game-wolf" style="background: url(https://cdn.jsdelivr.net/gh/fez7yoe/My-Hexo-File/cover/Capsaicin_illustration.webp);">
+  <div class="author-content-item game-wolf" style="background: url(https://cdn.jsdelivr.net/gh/fez7yoe/My-Hexo-File/cover/Capsaicin_Custom_Cover.png);">
     <div class="card-content">
       <div class="author-content-item-tips">繼本命 「甜辣醬餅乾」 後，覺得可愛到爆的餅乾</div>
       <span class="author-content-item-title">薑餅人王國</span>
@@ -822,9 +919,16 @@
       });
     </script>
 
+    <style>
+      :root {
+          --site-about-oneself-map--light: url(https://cdn.jsdelivr.net/gh/fez7yoe/My-Hexo-File/cover/map3.png);
+          --site-about-oneself-map--dark: url(https://cdn.jsdelivr.net/gh/fez7yoe/My-Hexo-File/cover/map3.png);
+      }
+    </style>
+
 
 <div class="author-content-item-group column mapAndInfo">
-    <div class="author-content-item map single" style="background: url(https://cdn.jsdelivr.net/gh/fez7yoe/My-Hexo-File/cover/map.png )">
+    <div class="author-content-item map single">
       <span class="map-title">我在 <b>台灣，雖然住三峽、但不愛吃金牛角</b></span></div>
     <div class="author-content-item selfInfo single">
       <div><span class="selfInfo-title">離開母體曝露在空氣之時</span><span class="selfInfo-content" style="color: #43a6c6;">1998</span></div>
@@ -975,7 +1079,7 @@
             <h3 class="footer-title">隨心遊走</h3>
             <div class="footer-links">
                 
-                    <a class="footer-item" href="/randomlinks/index.html" title="前往首頁" rel="noopener external nofollow noreferrer">前往首頁</a>
+                    <a class="footer-item" href="/randomlinks/index.html" title="專案首頁" rel="noopener external nofollow noreferrer">專案首頁</a>
                 
                     <a class="footer-item" href="/posts/abf9cfdb/" title="專案簡介" rel="noopener external nofollow noreferrer">專案簡介</a>
                     
@@ -995,13 +1099,13 @@
         </div>
     
 </div>
-<div id="footer-banner">
-    <div class="footer-banner-links">
-        <div class="footer-banner-left">
-            <div id="footer-banner-tips">
+<div id="footer-section">
+    <div class="footer-section-links">
+        <div class="footer-section-left">
+            <div id="footer-section-tips">
                 <div class="copyright">©2022 - 2023 By 
-                    <a class="footer-banner-link" href="/" rel="external nofollow" title="回到首頁">綠武舞 fez7yoe</a>
-                    <a class="footer-banner-link">
+                    <a class="footer-section-link" href="/" rel="external nofollow" title="回到首頁">綠武舞 fez7yoe</a>
+                    <a class="footer-section-link">
                         
                     </a>
                 </div>
@@ -1012,8 +1116,8 @@
                 <a target="_blank" rel="noopener" href="https://dragcave.net/view/9LpGe"><img src="https://dragcave.net/image/9LpGe.gif" style="border-width:0" title="摸摸牠" alt="Adopt one today!"/></a>
             </div>
         </div>
-        <div class="footer-banner-right">
-            <div class="footer-banner-link">
+        <div class="footer-section-right">
+            <div class="footer-section-link">
                 <a id="RunTime"></a><br>
                 <script>
                     var BootDate = new Date("2022/06/04 15:00:00");
@@ -1029,16 +1133,16 @@
                     }
                     setInterval("ShowRunTime('RunTime')", 1000);
                 </script>
-            <a class="footer-banner-link" href="https://github.com/hexojs/hexo" target="_blank" title="以 Hexo 框架構成">框架</a>
-            <a class="footer-banner-link" href="https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic-Next" target="_blank" title="再搭配 Acrylic-Next 為主題">主題</a>
-            <a class="footer-banner-link" href="/atom.xml" target="_blank" title="提供 Atom 供稿格式">訂閱</a>
-            <a class="footer-banner-link" href="/sitemap.xml" target="_blank" title="給爬蟲機器人看的">地圖</a>
+            <a class="footer-section-link" href="https://github.com/hexojs/hexo" target="_blank" title="以 Hexo 框架構成">框架</a>
+            <a class="footer-section-link" href="https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic-Next" target="_blank" title="再搭配 Acrylic-Next 為主題">主題</a>
+            <a class="footer-section-link" href="/atom.xml" target="_blank" title="提供 Atom 供稿格式">訂閱</a>
+            <a class="footer-section-link" href="/sitemap.xml" target="_blank" title="給爬蟲機器人看的">地圖</a>
             
-                <a class="footer-banner-link" target="_blank" href="https://icp.gov.moe/?keyword=20220535" rel="noopener external nofollow noreferrer noopener" title="在異次元國度裡所選擇的編號">
+                <a class="footer-section-link" target="_blank" href="https://icp.gov.moe/?keyword=20220535" rel="noopener external nofollow noreferrer noopener" title="在異次元國度裡所選擇的編號">
                     萌備
                 </a>
             
-            <a class="footer-banner-link cc" target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/3.0/tw/" title="創用 CC 授權條款"><br>
+            <a class="footer-section-link cc" target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/3.0/tw/" title="創用 CC 授權條款"><br>
                 <i class="fa-brands fa-creative-commons"></i><i class="fa-brands fa-creative-commons-by"></i><i class="fa-brands fa-creative-commons-nc"></i><i class="fa-brands fa-creative-commons-nd"></i>
             </a>
         </div>

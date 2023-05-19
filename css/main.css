@@ -3354,11 +3354,12 @@ li, ul {
 }
 
 #sidebar #sidebar-menus .menus_items .menus_item_child {
-  margin: 0px;
+  margin: 0px 0px;
   list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 5px 0px;
 }
 
 #sidebar #sidebar-menus .menus_item_child .site-page.child {
@@ -4104,14 +4105,14 @@ html {
 }
 
 #page-header #nav #nav-right .nav-button a.totopbtn {
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   border-radius: 40px;
   background: var(--heo-fontcolor);
   color: var(--heo-card-bg);
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 0.5px;
+  right: 0px;
   transition: 0.3s;
 }
 
@@ -4126,8 +4127,8 @@ html {
 #page-header #nav #nav-right .nav-button:not(.long):hover a.totopbtn {
   width: 35px;
   height: 35px;
-  top: 0;
-  right: 0;
+  top: 0.5px;
+  right: 0px;
 }
 
 /* 导航栏图标 */
@@ -5161,6 +5162,12 @@ a.console_switchbutton {
 @media screen and (max-width: 768px) {
   #nav-console {
     display: none;
+  }
+  a.darkmode_switchbutton {
+    display: none !important;
+  }
+  #sidebar #sidebar-menus span.sidebar-menu-item-title {
+    display: none !important;
   }
 }
 
@@ -6575,8 +6582,9 @@ a.categoryButton:hover {
 }
 
 .category-bar-more {
-  margin-left: 14px;
+  margin: 0px 0px 0px 0px;
   font-weight: bold;
+  padding: 2px 0px 0px 0px;
 }
 
 .category-bar-more:hover {
@@ -11431,7 +11439,7 @@ figure.gallery-group:hover .gallery-group-name::after {
   }
 }
 
-.footer-banner-right {
+.footer-section-right {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -12265,7 +12273,7 @@ a.bb-link-info:hover {
   font-size: 0.8rem;
 }
 
-#footer-banner {
+#footer-section {
   padding: 1rem;
   color: var(--heo-fontcolor);
   margin-top: 1rem;
@@ -12276,7 +12284,7 @@ a.bb-link-info:hover {
   transition: 0.3s;
 }
 
-#footer-banner .footer-banner-links {
+#footer-section .footer-section-links {
   display: flex;
   justify-content: space-between;
   max-width: 1400px;
@@ -12286,13 +12294,13 @@ a.bb-link-info:hover {
   align-items: center;
 }
 
-#footer-banner .footer-banner-left {
+#footer-section .footer-section-left {
   display: flex;
   flex-wrap: wrap;
   min-height: 32px;
 }
 
-#footer-banner .footer-banner-link {
+#footer-section .footer-section-link {
   margin-right: 1rem;
   color: var(--heo-fontcolor);
   font-size: 0.8rem;
@@ -12300,23 +12308,23 @@ a.bb-link-info:hover {
   white-space: nowrap;
 }
 
-#footer-banner .footer-banner-link.cc {
+#footer-section .footer-section-link.cc {
   margin-right: 0rem;
 }
 
-#footer-banner .footer-banner-link.cc i {
+#footer-section .footer-section-link.cc i {
   margin-right: 0.5rem;
 }
 
-#footer-banner .footer-banner-link:hover {
+#footer-section .footer-section-link:hover {
   color: var(--heo-theme);
 }
 
-#footer-banner>div>div.footer-banner-left>span {
+#footer-section>div>div.footer-section-left>span {
   margin-right: 1rem;
 }
 
-#footer-banner .footer-banner-right a:hover {
+#footer-section .footer-section-right a:hover {
   color: var(--heo-lighttext);
 }
 
@@ -12584,8 +12592,9 @@ a.bb-link-info:hover {
 /* 关于页面地图 */
 
 .author-content-item.map {
-  background-repeat: no-repeat ;  
-  background-position: center ;
+  background-image: var(--site-about-oneself-map--light);
+  background-repeat: no-repeat;
+  background-position: center;
   min-height: 160px;
   max-height: 400px;
   position: relative;
@@ -12597,9 +12606,10 @@ a.bb-link-info:hover {
 }
 
 [data-theme=dark] .author-content-item.map {
+  background-image: var(--site-about-oneself-map--dark);
   background-size: 100% ;
-  background-repeat: no-repeat ;  
-  background-position: center ;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .author-content-item.map:hover {
@@ -12652,6 +12662,7 @@ a.bb-link-info:hover {
   flex-wrap: wrap;
   height: -webkit-fill-available;
   height: 40%;
+  min-height: max-content;
 }
 
 @media screen and (max-width: 1300px) {
@@ -12785,11 +12796,12 @@ a.bb-link-info:hover {
 
 @media screen and (max-width: 768px) {
   .author-content-item.personalities {
-    min-height: 300px;
+    min-height: 350px;
   }
 
   .author-content-item.personalities .image {
-    right: 0px;
+    right: 30px;
+    top: 60px;
   }
 }
 
