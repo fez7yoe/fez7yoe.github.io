@@ -303,6 +303,21 @@ class acrylic {
             }
         })
     }
+    static rightMenuCommentText(txt) {
+        const input = document.querySelector('.el-textarea__inner');
+        const evt = new Event('input', { bubbles: true, cancelable: true });
+        const inputValue = txt.replace(/\n/g, '\n> ');
+        input.value = '> ' + inputValue + '\n\n';
+        input.dispatchEvent(evt);
+        const domTop = document.querySelector("#post-comment").offsetTop;
+        window.scrollTo(0, domTop - 80);
+        input.focus();
+        input.setSelectionRange(-1, -1);
+        const commentTips = document.querySelector("#comment-tips");
+        if (commentTips) {
+          commentTips.classList.add("show");
+        }
+    }
     static initbbtalk() {
         if (document.querySelector('#bber-talk')) {
             var swiper = new Swiper('.swiper-container', {
