@@ -4145,7 +4145,7 @@ html {
   padding: 0 !important;
   align-items: center;
   justify-content: center;
-  margin-right: 4px;
+  margin-right: 10px;
   transition: 0.3s;
   border-radius: 8px;
   color: var(--heo-white);
@@ -4191,7 +4191,7 @@ html {
 .back-menu-list-groups .back-menu-list .back-menu-item {
   display: flex;
   align-items: center;
-  margin: 4px 8px;
+  margin: 8px 8px;
   padding: 4px 8px !important;
   transition: 0.3s;
   border-radius: 8px;
