@@ -11907,7 +11907,7 @@ figure.gallery-group:hover .gallery-group-name::after {
   color: var(--heo-fontcolor);
   font-size: 0.7rem;
   background-color: var(--heo-gray-op);
-  padding: 0 10px;
+  padding: 0px 10px;
   border-radius: 20px;
   cursor: default;
   display: flex;
